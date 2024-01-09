@@ -1,0 +1,25 @@
+<main class = "container mx-auto mt-10">  
+   <h2 class = "text-center text-3xl my-10 ">Add Your Creativity and Ideas Here!</h2> 
+
+   <form action="/postblog" method = "POST" class = "max-w-md mx-auto">    
+    <div class = "flex flex-col py-4 gap-y-2">  
+        <label for="title">Title</label>
+        <input type="text" name = "title" id = "title" class = "px-4 py-2 rounded-md border border-slate-400 focus:outline-none focus:ring-2 ring-offset-2 ring-slate-200" required/>    
+    </div>
+
+    <div class = "flex flex-col py-4 gap-y-2">  
+        <label for="content">Blog Content</label>
+        <textarea type="text" name = "content" id = "content" class = "px-4 py-2 rounded-md border border-slate-400 focus:outline-none focus:ring-2 ring-offset-2 ring-slate-200 min-h-60 resize-none" required></textarea>     
+    </div>
+
+    <div class = "flex flex-col py-4 gap-y-2">  
+        <label for="author">Author</label>
+        <input type="text" name = "author" id = "author" class = "px-4 py-2 rounded-md border border-slate-400 focus:outline-none focus:ring-2 ring-offset-2 ring-slate-200" required/>    
+    </div>
+
+    <div class = "mt-4 flex justify-end">   
+        <button type = "submit" class = "w-1/2 py-2 cursor-pointer bg-teal-500 hover:bg-teal-600 font-semibold rounded-lg shadow-md shadow-slate-300 ">Post Blog</button>
+    </div>
+
+   </form>
+</main>
